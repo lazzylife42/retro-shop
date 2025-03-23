@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Shop 3D - Style N64/PS1</title>
+    <title>Studio de Tatouage Rétro - Style PS1/N64</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,12 +25,23 @@
             </div>
             <div id="controls-info">
                 <div class="retro-text">UTILISEZ LES FLÈCHES POUR NAVIGUER</div>
-                <div class="retro-text">APPUYEZ SUR ESPACE POUR ACHETER</div>
+                <div class="retro-text">APPUYEZ SUR ESPACE POUR SÉLECTIONNER</div>
             </div>
         </div>
     </div>
 
+    <!-- Chargement de Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Chargement des scripts dans le bon ordre -->
+    <script src="js/utils.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/tattoo-artist.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/environment.js"></script>
+    
+    <!-- Charger le script principal en dernier -->
     <script src="js/main.js"></script>
 </body>
 </html>
