@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Shop 3D - Style N64/PS1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="retro-text">CHARGEMENT...</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <canvas id="shop-canvas"></canvas>
+        
+        <div id="hud">
+            <div id="money">CRÉDITS: 1000</div>
+            <div id="item-info">
+                <div class="retro-text" id="item-name">-</div>
+                <div class="retro-text" id="item-price">-</div>
+            </div>
+            <div id="controls-info">
+                <div class="retro-text">UTILISEZ LES FLÈCHES POUR NAVIGUER</div>
+                <div class="retro-text">APPUYEZ SUR ESPACE POUR ACHETER</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
